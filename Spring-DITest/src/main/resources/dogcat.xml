@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--context的约束要导进来-->
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd">
+
+<!--&lt;!&ndash;注解的可支持要开启&ndash;&gt;-->
+    <!--<context:annotation-config/>-->
+    <!--<bean id="cat1221" class="bean.Cat"/>-->
+    <!--<bean id="dog222" class="bean.Dog"/>-->
+    <!--<bean id="person" class="bean.Person">-->
+        <!--&lt;!&ndash;<property name="cat" ref="cat"/>&ndash;&gt;-->
+        <!--&lt;!&ndash;<property name="dog" ref="dog"/>&ndash;&gt;-->
+    <!--</bean>-->
+
+
+    <!--注解式开发-->
+    <context:component-scan base-package="bean"/>
+    <context:annotation-config/>
+</beans>
